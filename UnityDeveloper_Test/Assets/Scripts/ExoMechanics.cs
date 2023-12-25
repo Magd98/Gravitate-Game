@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExoMechanics : MonoBehaviour
 {
@@ -64,6 +65,11 @@ public class ExoMechanics : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
+        }
+
+        if (collision.gameObject.tag == "GameOver")
+        {
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }
