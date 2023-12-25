@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - CubeCollected
+  - GameOver
   layers:
   - Default
   - TransparentFX
